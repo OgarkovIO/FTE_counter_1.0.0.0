@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10B70CCC-49F9-4DD3-8ED9-582CBF342DDD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FTE_counter</RootNamespace>
+    <AssemblyName>FTE_counter</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>F:\Debug\122\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4CDE874537729E16F2E5D20F2AC466AD032671BE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FTE_counter_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>FTE counter_win7.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server Compact Edition\v3.5\Desktop\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutFTECounter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutFTECounter.Designer.cs">
+      <DependentUpon>AboutFTECounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageForm.Designer.cs">
+      <DependentUpon>ManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoaderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoaderForm.Designer.cs">
+      <DependentUpon>LoaderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options_EXCEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options_EXCEL.Designer.cs">
+      <DependentUpon>Options_EXCEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otions.Designer.cs">
+      <DependentUpon>Otions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrevewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrevewForm.Designer.cs">
+      <DependentUpon>PrevewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLEndlessBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQLEndlessBar.Designer.cs">
+      <DependentUpon>SQLEndlessBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLProgressIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SQLProgressIndex.Designer.cs">
+      <DependentUpon>SQLProgressIndex.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutFTECounter.resx">
+      <DependentUpon>AboutFTECounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageForm.resx">
+      <DependentUpon>ManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoaderForm.resx">
+      <DependentUpon>LoaderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options_EXCEL.resx">
+      <DependentUpon>Options_EXCEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otions.resx">
+      <DependentUpon>Otions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrevewForm.resx">
+      <DependentUpon>PrevewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLEndlessBar.resx">
+      <DependentUpon>SQLEndlessBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SQLProgressIndex.resx">
+      <DependentUpon>SQLProgressIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FTE_counter_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\DataBaseConnector.DBManager.datasource" />
+    <None Include="Properties\DataSources\DataBaseConnector.Sd_zno.datasource" />
+    <None Include="Properties\DataSources\DataBaseConnector.Sd_znr.datasource" />
+    <None Include="Properties\DataSources\DataBaseConnector.Sm_inc.datasource" />
+    <None Include="Properties\DataSources\DataBaseConnector.Sm_zno.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataBaseConnector\DataBaseConnector.csproj">
+      <Project>{89aea83f-36a6-450a-b0ec-c719542ab6a9}</Project>
+      <Name>DataBaseConnector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Filters\Filters.csproj">
+      <Project>{fc77e489-8113-45e0-a927-4e379cabe778}</Project>
+      <Name>Filters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Loader\Loader.csproj">
+      <Project>{c34e7e63-d783-4c9f-8eb5-515cb7810e89}</Project>
+      <Name>Loader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FTE counter_256.ico" />
+    <Content Include="FTE counter_win7.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
